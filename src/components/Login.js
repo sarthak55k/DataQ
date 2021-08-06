@@ -51,7 +51,7 @@ class Login extends Component {
         alert(error.response.data.error)
       });
   };
-
+  
   render() {
     if (this.state.loggedIn) return <Redirect to="competition" />;
     return (
