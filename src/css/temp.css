@@ -1,0 +1,281 @@
+* {
+  font-family: "Poppins", Mulish, Ubuntu;
+}
+
+.container-fluid {
+  position: relative;
+}
+
+.container {
+  padding: 25px;
+}
+
+.top {
+  background-color: #031f4b;
+  height: 25vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hrTag {
+  background-color: white;
+  height: 1px;
+  width: 15vh;
+}
+
+.hrTag2 {
+  height: 15vh;
+  width: 0.7vh;
+  margin: 8px 24px;
+  background-color: rgb(134, 131, 131);
+}
+
+.comp {
+  color: #feffed;
+  display: block;
+  height: 10vh;
+  margin-top: 10vh;
+  margin-right: 30vh;
+  /* margin-left: 25vh; */
+}
+
+.bottom {
+  background-color: white;
+
+  padding-bottom: 20px;
+}
+
+.overlay {
+  height: auto;
+  width: 50em;
+  position: absolute;
+  text-align: left;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 40vh;
+  box-shadow: 0px 0px 10px 1px rgb(145, 144, 144);
+}
+
+.popup {
+  margin-top: 11vh;
+  height: 13em;
+  width: 50em;
+  position: absolute;
+  text-align: left;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: inherit;
+
+  box-shadow: 0px 0px 10px 1px rgb(145, 144, 144);
+}
+
+ul {
+  padding: 0%;
+  margin: 0;
+}
+
+.liSty {
+  padding-left: 1em;
+  text-indent: -0.1em;
+}
+
+.liSty::before {
+  content: "• ";
+  color: #0077b6;
+  font-size: 170%;
+}
+
+.tabStyle {
+  background-color: white;
+  color: black;
+}
+
+/* Active tab */
+.tabStyle ul > li.active {
+  background-color: red;
+  color: white;
+}
+
+.sentenceBrk {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.downloadbox {
+  width: 14rem;
+  height: 3rem;
+  border: solid 1px rgb(145, 144, 144);
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.downloadbox:hover {
+  background-color: #0077b6;
+}
+
+span {
+  color: black;
+}
+
+span:hover {
+  color: white;
+}
+
+.aligning {
+  display: flex;
+  justify-content: center;
+}
+
+.navStyle {
+  background-color: #035b96;
+  font-size: large;
+}
+.countDown {
+  display: flex;
+  justify-content: space-around;
+  font-family: sans-serif;
+  text-align: center;
+}
+.cardStyle {
+  /* float: right; */
+  width: 40rem;
+  height: 16rem;
+  /* margin-right: 20rem; */
+  margin-top: 5vh;
+  text-align: left;
+}
+
+.leaderStyle {
+  text-align: center;
+}
+
+.leaderStyle2 {
+  color: #03045e;
+}
+
+.leaderStyle3 {
+  width: 140vh;
+}
+
+.submission {
+  float: left;
+  display: flex;
+  padding: auto;
+  margin: 5vh;
+}
+
+li {
+  padding: 3px;
+}
+
+.container-box {
+  margin: 2em auto;
+  /* margin-top: 10em; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.sign-in-svg {
+  width: 45%;
+  min-width: 500px;
+  /* max-width: 600px; */
+  margin: auto;
+}
+.container-box img {
+  width: 100%;
+}
+.sign-in-container button {
+  border: 0;
+  background-color: #48cae4;
+  width: fit-content;
+}
+.sign-in-container button:hover {
+  background-color: #90e0ef;
+  box-shadow: #90e0ef 0 0 3px;
+  color: #03045e;
+}
+.sign-in-container button:active {
+  background-color: #90e0ef;
+  box-shadow: #90e0ef 0 0 3px;
+  color: #03045e;
+}
+.sign-in-container {
+  margin: auto;
+  width: fit-content;
+  width: 50%;
+  max-width: 500px;
+  background-color: #0077b6;
+  box-shadow: #0077b6 0 0 20px;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+.sign-in-container input {
+  box-shadow: #ffffff 0 0 5px;
+  border: 0;
+}
+@media (max-width: 950px) {
+  .container-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sign-in-svg {
+    display: none;
+  }
+  .sign-in-container {
+    width: 80%;
+    margin: 1em auto;
+    min-width: 300px;
+  }
+  .sign-in-container {
+    min-width: 300px;
+  }
+}
+/* .navStyle2{
+    font-size: large;
+} */
+.button {
+  border: 0;
+  padding: 0.25em;
+  border: 2px solid;
+}
+.disabled {
+  pointer-events: none;
+  background-color: #cccccc;
+  color: #eeeeee;
+  border-radius: 5px;
+}
+.complete {
+  background-color: #e5ffcc;
+  border-radius: 5px;
+  color: #008000;
+}
+.current {
+  background-color: #ccffff;
+  border-radius: 5px;
+  color: #0077b6;
+}
+
+.current:hover {
+  background-color: #0077b6;
+  color: #ccffff;
+}
+.complete:hover {
+  background-color: #008000;
+  color: #e5ffcc;
+}
+.overlay {
+  border-radius: 20px;
+  box-shadow: 0 0 10px;
+}
